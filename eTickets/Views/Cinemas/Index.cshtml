@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<Cinema>
-@{ 
+@{
     ViewData["Title"] = "List of Cinemas";
 }
 <div class="row">
@@ -18,7 +18,7 @@
                 {
                     <tr>
                         <td class="align-middle">
-                            <img  class="rounded-circle" src="~/images/@item.Logo" alt="@item.Name"style="width:150px;height:150px;"/>
+                            <img class="rounded-circle" src="@item.Logo" alt="@item.Name" style="width:200px;height:150px;" />
                         </td>
                         <td class="align-middle">
                             @Html.DisplayFor(modelItem => item.Name)
